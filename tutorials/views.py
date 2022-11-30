@@ -33,7 +33,7 @@ class list_all_tutorials(APIView):
     renderer_classes = [TemplateHTMLRenderer]
     template_name = 'tutorials/tutorial_list.html'
 
-    def get(self, request):
+#    def get(self, request):
         queryset = Tutorial.objects.all()
         return Response({'tutorials': queryset})
 
